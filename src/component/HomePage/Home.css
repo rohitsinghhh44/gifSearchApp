@@ -1,0 +1,70 @@
+body {
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?cs=srgb&dl=pexels-valiphotos-589840.jpg&fm=jpg");
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card img {
+  width: 95%;
+  height: 80%;
+  text-align: center;
+}
+.card {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  box-shadow: 5px 3px grey;
+  border: 2px solid black;
+  margin-top: 10px;
+  width: 300px;
+  height: 400px;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid rgb(175, 0, 0);
+  border-bottom: 8px solid rgb(175, 0, 0);
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+input {
+  border-radius: 15px;
+  width: 400px;
+  height: 30px;
+}
+button {
+  border-radius: 10px;
+  height: 35px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
